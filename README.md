@@ -1,2 +1,1 @@
-**TÄMÄ OSUUS ON __BOLD__**
-__TÄMÄ OSUUS ON **KURSIVOITU**__
+Tässä on *BOLD*, ja tässä on _kursivoitu_
