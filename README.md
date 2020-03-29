@@ -8,5 +8,5 @@ https://github.com/mcpetri/ot-harjoitustyo/blob/master/laskarit/gitlog.txt
 
 https://github.com/mcpetri/ot-harjoitustyo/blob/master/laskarit/komentorivi.txt
 
-https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi.md
+https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/Dokumentointi.md
 
