@@ -34,4 +34,3 @@ Ratkaise x:n arvo.                x * 4 : 6 = 24
 
 
 
-Työaikakirjanpito: x h
