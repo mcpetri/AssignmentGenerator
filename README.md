@@ -1,12 +1,4 @@
 **OHJELMISTOTEKNIIKKA, harjoitustyö**
 
-**Tehtävät**
-
-**Viikko 1**
-
-https://github.com/mcpetri/ot-harjoitustyo/blob/master/laskarit/gitlog.txt
-
-https://github.com/mcpetri/ot-harjoitustyo/blob/master/laskarit/komentorivi.txt
-
-https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/Dokumentointi.md
+mvn compile exec:java -Dexec.mainClass=Tehtavageneraattori.Paaohjelma
 
