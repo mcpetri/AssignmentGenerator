@@ -11,8 +11,10 @@ package Tehtavageneraattori;
  */
 public class Laskin {
     
-    public void laskin(String lauseke) { //Toteutetaan tänne tulevaisuudessa(?) vaikeammille laskuille lopputuloksen aikaansaava laskin jolle syötetään vain lauseke
+    public void laskin(String lauseke) { 
         //Maths
+        //Toteutetaan tänne tulevaisuudessa(?) vaikeammille laskuille lopputuloksen aikaansaava laskin jolle syötetään vain lauseke
+        //Esimerkiksi sulkeet ja erimerkkiset laskut sekaisin
     }
     
 }

@@ -9,15 +9,14 @@ import java.util.*;
 
 public class Tehtavageneraattori {
     
+    int tila = 0;
     
-    
-    public static void main(String[] args) {
-        int tila = 0;
+    public Tehtavageneraattori() {
         
         Tehtava tehtava = new Tehtava();
+        Laskin laskin = new Laskin();
         Scanner lukija = new Scanner(System.in);
-        
-        
+          
         while(true) {
             if(tila==0) {
                 System.out.println("Tervetuloa tehtavageneraattoriin, \n"
