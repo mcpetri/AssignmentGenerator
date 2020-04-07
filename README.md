@@ -14,6 +14,8 @@ Sovelluksen tekstikäyttöliittymä sallii neljän erimerkkisen laskun, yhteen-,
 
 [Tuntikirjanpito](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/tuntikirjanpito.md)
 
+[Arkkitehtuuri](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/arkkitehtuuri.md)
+
 
 
 
