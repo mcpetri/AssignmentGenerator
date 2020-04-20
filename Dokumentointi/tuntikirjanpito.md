@@ -15,4 +15,7 @@
 | 20.4  | 2    | Ahkeran päivän lopuksi muutama testi lisää, laskimen lisääminen käyttäjälle |
 | 20.4  | 1    | Checkstylen ja jacocon toimivuus ja korjailu, sidenote: uudessa versiossa yllättävän verran vähemmän virheitä |
 |       |      |  |
-| yht   | 13.5 |  | 
+|       |      |  |
+|       |      |  |
+|       |      |  |
+| yht   | 16.5 |  | 
