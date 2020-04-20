@@ -29,9 +29,11 @@ Ratkaise x:n arvo.                x * 4 : 6 = 24    (tehty)
 
 -Laskin vaikeampia tehtäviä varten (tehty)
 
--Satunnainen määrä tekijöitä / eri etumerkkejä / eri laskuja
+-Laskin käytettäväksi käyttäjälle (tehty)
 
--Graafinen käyttöliittymä!
+-Satunnainen määrä tekijöitä / eri etumerkkejä / eri laskuja eli vaikeusasteen lisääminen
+
+-Graafinen käyttöliittymä! (tehty)
 
 -Plus/miinus ja kerto/jako -laskuja sekaisin
 
