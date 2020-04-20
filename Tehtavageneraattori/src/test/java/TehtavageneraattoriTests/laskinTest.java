@@ -5,7 +5,7 @@
  */
 package TehtavageneraattoriTests;
 
-import Tehtavageneraattori.Laskin;
+import Tehtavageneraattori.laskin;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author petri
  */
-public class LaskinTest {
+public class laskinTest {
     
-    Laskin testiLaskin = new Laskin();
+    laskin testiLaskin = new laskin();
     //laske() palauttaa doublen
     
     @Test

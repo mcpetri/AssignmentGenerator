@@ -9,8 +9,8 @@ import java.util.*;
  *
  * @author petri
  */
-public class Tehtava {
-    Laskin laskin = new Laskin();
+public class tehtava {
+    laskin laskin = new laskin();
     Random rand = new Random();
     double vastaus;
     public double luoTehtava(final String merkki) { //Luo alkeellisen tehtavan annetulle merkkityypille +/-/*/:

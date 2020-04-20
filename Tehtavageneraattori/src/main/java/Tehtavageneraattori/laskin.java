@@ -9,17 +9,19 @@ package Tehtavageneraattori;
  *
  * @author petri
  */
-public class Laskin {
+public class laskin {
     /**
      *
      * @param lauseke
      * @return
      */
     public double laske(final String lauseke) {
-        return new Object() {                   //Luodaan kokonaisuudessaan uusi objekti tänne joka kutsuu omaa metodiaan (mark for replacement)
-            private int indeksi = -1;           //merkki = luku tai +-/*
-            private int merkki = -1;            //-1 muuttuu heti nollaksi
-            void seuraava() {                                   //Asetetaan seuraava merkki
+        return new Object() {
+            //Luodaan kokonaisuudessaan uusi objekti tänne
+            //joka kutsuu omaa metodiaan (mark for replacement)
+            private int indeksi = -1;
+            private int merkki = -1;
+            void seuraava() { //Asetetaan seuraava merkki
                 if (++indeksi < lauseke.length()) {
                     merkki = lauseke.charAt(indeksi);
                 } else {
@@ -27,15 +29,16 @@ public class Laskin {
                 }
             }
 
-            boolean poista(final int poistettava) {             //Liikutaan seuraavaan merkkiin (char)
+            boolean poista(final int poistettava) { //Liikutaan seuraavaan merkkiin (char)
                 if (merkki == poistettava) {
                     seuraava();
                     return true;
                 }
                 return false;
             }
-            //laske metodi aloittaa tästä omalla parse() kutsullaan ja lähtee
-            //liikkumaan lausekkeessa merkki kerrallaan lauseke->termi->tekija
+            //laske metodi aloittaa tästä omalla parse()
+            //kutsullaan ja lähtee liikkumaan lausekkeessa
+            //merkki kerrallaan lauseke->termi->tekija
             double parse() {
                 seuraava();
                 double x = parseLauseke();
@@ -48,9 +51,9 @@ public class Laskin {
             double parseLauseke() {
                 double x = parseTermi();
                 for (;;) {
-                    if      (poista('+')) {         //Yhteenlasku
+                    if      (poista('+')) { //Yhteenlasku
                         x += parseTermi();
-                    } else if (poista('-')) {         //Vähennyslasku
+                    } else if (poista('-')) { //Vähennyslasku
                         x -= parseTermi();
                     } else {
                         return x;
@@ -61,9 +64,9 @@ public class Laskin {
             double parseTermi() {
                 double x = parseTekija();
                 for (;;) {
-                    if (poista('*')) {         //Kertolasku
+                    if (poista('*')) { //Kertolasku
                         x *= parseTekija();
-                    } else if (poista('/')) {         //Jakolasku
+                    } else if (poista('/')) { //Jakolasku
                         x /= parseTekija();
                     }  else {
                         return x;
@@ -73,15 +76,15 @@ public class Laskin {
 
             double parseTekija() {
                 if (poista('+')) {
-                    return parseTekija();       //Etumerkki plus
+                    return parseTekija(); //Etumerkki plus
                 }
                 if (poista('-')) {
-                    return -parseTekija();      //Etumerkki miinus
+                    return -parseTekija(); //Etumerkki miinus
                 }
 
                 double x;
                 int alkuIndeksi = this.indeksi;
-                if (poista('(')) {                          //Sulkeet
+                if (poista('(')) { //Sulkeet
                     x = parseLauseke();
                     poista(')');
                 } else if ((merkki >= '0' && merkki <= '9') || merkki == '.') {             //Numerot ja desimaalit

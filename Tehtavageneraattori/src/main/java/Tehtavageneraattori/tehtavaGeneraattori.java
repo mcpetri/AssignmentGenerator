@@ -1,19 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Tehtavageneraattori;
-import java.util.*;
+import java.util.Scanner;
 
 
-public class Tehtavageneraattori {
+public class tehtavaGeneraattori {
     
     int tila = 0;
     
-    public Tehtavageneraattori() {
+    public tehtavaGeneraattori() {
         
-        Tehtava tehtava = new Tehtava();
+        tehtava tehtava = new tehtava();
         Scanner lukija = new Scanner(System.in);
           
         while(true) {
@@ -93,7 +88,7 @@ public class Tehtavageneraattori {
                         System.out.print("Virhe, yritä uudelleen: ");
                     }
                 }   
-                int vastaus = temp;;
+                int vastaus = temp;
                 if (tulos == vastaus) {
                     System.out.println("Vastasit oikein!");
                 } else {
@@ -136,15 +131,5 @@ public class Tehtavageneraattori {
             }
             
         }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    } 
 }
-
