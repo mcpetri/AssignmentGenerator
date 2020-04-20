@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package TehtavageneraattoriTests;
+package generaattoriapp.logic;
 
-import Tehtavageneraattori.laskin;
+import generaattoriapp.logic.Laskin;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author petri
  */
-public class laskinTest {
+public class LaskinTest {
     
-    laskin testiLaskin = new laskin();
+    Laskin testiLaskin = new Laskin();
     //laske() palauttaa doublen
     
     @Test

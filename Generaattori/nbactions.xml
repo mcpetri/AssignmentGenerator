@@ -11,6 +11,7 @@
             <actionName>CUSTOM-checkstyle</actionName>
             <displayName>checkstyle</displayName>
             <goals>
+                <goal>jxr:jxr</goal>
                 <goal>checkstyle:checkstyle</goal>
             </goals>
         </action>

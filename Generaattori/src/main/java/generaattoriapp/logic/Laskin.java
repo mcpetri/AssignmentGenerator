@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Tehtavageneraattori;
+package generaattoriapp.logic;
 
 /**
  *
  * @author petri
  */
-public class laskin {
+public class Laskin {
     /**
      *
      * @param lauseke
@@ -29,7 +29,8 @@ public class laskin {
                 }
             }
 
-            boolean poista(final int poistettava) { //Liikutaan seuraavaan merkkiin (char)
+            boolean poista(final int poistettava) { 
+            //Liikutaan seuraavaan merkkiin (char)
                 if (merkki == poistettava) {
                     seuraava();
                     return true;
@@ -87,7 +88,7 @@ public class laskin {
                 if (poista('(')) { //Sulkeet
                     x = parseLauseke();
                     poista(')');
-                } else if ((merkki >= '0' && merkki <= '9') || merkki == '.') {             //Numerot ja desimaalit
+                } else if ((merkki >= '0' && merkki <= '9') || merkki == '.') {
                     while ((merkki >= '0' && merkki <= '9') || merkki == '.') {
                         seuraava();
                     }

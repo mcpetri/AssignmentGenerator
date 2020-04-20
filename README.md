@@ -19,7 +19,7 @@ Sovelluksen tekstikäyttöliittymä sallii neljän erimerkkisen laskun, yhteen-,
 
 
 
-mvn compile exec:java -Dexec.mainClass=Tehtavageneraattori.Paaohjelma
+mvn compile exec:java -Dexec.mainClass=generaattoriapp.main.Main
 
 //Mieluummin suoritetaan NetBeansissa
 
