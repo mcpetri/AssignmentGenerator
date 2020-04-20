@@ -4,7 +4,7 @@
 
 **Tehtavageneraattori matematiikan tehtäville**
 
-Sovelluksen tekstikäyttöliittymä sallii neljän erimerkkisen laskun, yhteen-, vähennys-, kerto-, ja jakolaskujen tekemisen. Generaattori tuottaa tällä hetkellä alkeellisia "ratkaise x" kysymyksiä joissa tekijöinä 2 eri lukua, toinen väliltä 10-30 ja toinen 1-10.
+Sovelluksen tekstikäyttöliittymä sallii neljän erimerkkisen laskun, yhteen-, vähennys-, kerto-, ja jakolaskujen tekemisen. Generaattori tuottaa tällä hetkellä alkeellisia "ratkaise x" kysymyksiä joissa tekijöinä 2 eri lukua väleiltä 1-200 sekä sisältää alkeellisen laskimen käyttäjälle.
 
 
 
