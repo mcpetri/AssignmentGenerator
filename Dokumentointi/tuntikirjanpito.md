@@ -12,7 +12,7 @@
 | 20.4  | 1    | JavaFXn perusteiden uudelleenopettelu |
 | 20.4  | 1    | Käytännössä projektin uudestaanluominen siten, että graafinen käyttöliittymä saadaan syntymään |
 | 20.4  | 2    | Graafisen käyttöliittymän alku ja ominaisuuksien luominen |
-|       |      |  |
-|       |      |  |
+| 20.4  | 2    | Ahkeran päivän lopuksi muutama testi lisää, laskimen lisääminen käyttäjälle |
+| 20.4  | 1    | Checkstylen ja jacocon toimivuus ja korjailu, sidenote: uudessa versiossa yllättävän verran vähemmän virheitä |
 |       |      |  |
 | yht   | 13.5 |  | 
