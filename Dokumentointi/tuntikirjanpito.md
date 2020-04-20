@@ -11,7 +11,7 @@
 | 20.4  | 2    | JavaFXn sekä Netbeansin kanssa vääntäminen, sain lopulta toimimaan vaikka netbeans [vastusteli](https://i.imgur.com/jBjIbaf.png)  |
 | 20.4  | 1    | JavaFXn perusteiden uudelleenopettelu |
 | 20.4  | 1    | Käytännössä projektin uudestaanluominen siten, että graafinen käyttöliittymä saadaan syntymään |
-| 20.4  | 2    | Graafinen käyttöliittymän alku ja ominaisuuksien luominen |
+| 20.4  | 2    | Graafisen käyttöliittymän alku ja ominaisuuksien luominen |
 |       |      |  |
 |       |      |  |
 |       |      |  |
