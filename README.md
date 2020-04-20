@@ -17,6 +17,20 @@ Sovelluksen tekstikäyttöliittymä sallii neljän erimerkkisen laskun, yhteen-,
 [Arkkitehtuuri](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/arkkitehtuuri.md)
 
 
+**Releaset**
+
+[Viikko 5](https://github.com/mcpetri/ot-harjoitustyo/releases/tag/viikko5)
+
+**Komentorivitoiminnot**
+
+Testien suoritus *mvn compile*
+
+Testikattavuuden generointi *mvn jacoco:report*
+
+Suoritettavan jarin generointi *mvn package*
+
+Checkstyle tarkistus *mvn jxr:jxr checkstyle:checkstyle*
+
 
 
 mvn compile exec:java -Dexec.mainClass=generaattoriapp.main.Main
