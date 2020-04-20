@@ -40,7 +40,7 @@
                 <version>0.8.3</version>
                 <configuration>
                     <excludes>
-                        <exclude>generaattoriapp.ui/**/*</exclude>
+                        <exclude>generaattoriapp/ui/*</exclude>
                     </excludes>
                 </configuration>
                 <executions>
