@@ -23,7 +23,6 @@ Sovelluksen tekstikäyttöliittymä sallii neljän erimerkkisen laskun, yhteen-,
 
 **Komentorivitoiminnot**
 
-Testien suoritus *mvn compile*
 
 Testikattavuuden generointi *mvn jacoco:report*
 
