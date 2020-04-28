@@ -10,18 +10,22 @@ Ohjelma käynnistetään komennolla java -jar Generaattori.jar
 ## Tehtävien tekemisen aloittaminen
 
 Saavut aloitusruutuun
-![Imgur](https://i.imgur.com/ZfwgCgM.png)
+
+![Imgur](https://i.imgur.com/OL5xtYL.png)
 
 Vasemalla näet valikon vaihtoehdoista
-![Menu](https://imgur.com/wFqu9Nz)
+
+![Imgur](https://i.imgur.com/wFqu9Nz.png)
 
 Aloitus palauttaa aloitusruudun
 
 Yhteen-, vähennys-, kerto-, jako- ja satunnaislaskut avaavat tehtäväruudun
-![Tehtävä](https://imgur.com/JrPshdA)
+
+![Imgur](https://i.imgur.com/JrPshdA.png)
 
 Laskin avaa sisäisen laskimen
-![Laskin](https://imgur.com/ZfwgCgM)
+![Imgur](https://i.imgur.com/ZfwgCgM.png)
 
 Vaikeusaste avaa valikon josta käyttäjä voi säätää tekijöiden vaihtelua ja tekijöiden määrää
-![Vaikeuste](https://imgur.com/cy8kXxf)
+
+![Imgur](https://i.imgur.com/cy8kXxf.png)
