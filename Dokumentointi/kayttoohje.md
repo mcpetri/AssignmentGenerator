@@ -23,7 +23,7 @@ Yhteen-, vähennys-, kerto-, jako- ja satunnaislaskut avaavat tehtäväruudun
 
 ![Imgur](https://i.imgur.com/JrPshdA.png)
 
-Laskin avaa sisäisen laskimen
+Laskin avaa sisäisen laskimen, ohje avaa popup -ikkunan joka ohjeistaa laskimen käyttöön
 
 ![Imgur](https://i.imgur.com/ZfwgCgM.png)
 
