@@ -82,7 +82,6 @@ public class Laskin {
                 if (poista('-')) {
                     return -parseTekija(); //Etumerkki miinus
                 }
-
                 double x;
                 int alkuIndeksi = this.indeksi;
                 if (poista('(')) { //Sulkeet

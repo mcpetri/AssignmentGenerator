@@ -42,7 +42,7 @@ public class TehtavaTest {
     @Test
     public void testiJako() {
         testiTehtava.luoTehtava(":");
-        assertEquals(true,testiTehtava.getLauseke().contains(":"));
+        assertEquals(true,testiTehtava.getLauseke().contains("/"));
     }
     
 }
