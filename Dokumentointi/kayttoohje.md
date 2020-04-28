@@ -19,7 +19,7 @@ Vasemalla näet valikon vaihtoehdoista
 
 Aloitus palauttaa aloitusruudun
 
-Yhteen-, vähennys-, kerto-, jako- ja satunnaislaskut avaavat tehtäväruudun
+Yhteen-, vähennys-, kerto-, jako- ja satunnaislaskut avaavat tehtäväruudun ja samalla luovat uuden tehtävän joka kerta kun niitä painetaan
 
 ![Imgur](https://i.imgur.com/JrPshdA.png)
 
