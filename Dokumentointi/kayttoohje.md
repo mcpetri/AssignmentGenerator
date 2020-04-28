@@ -10,7 +10,7 @@ Ohjelma käynnistetään komennolla java -jar Generaattori.jar
 ## Tehtävien tekemisen aloittaminen
 
 Saavut aloitusruutuun
-![Aloitus](https://imgur.com/ZfwgCgM)
+[Imgur](https://i.imgur.com/ZfwgCgM.png)
 
 Vasemalla näet valikon vaihtoehdoista
 ![Menu](https://imgur.com/wFqu9Nz)
