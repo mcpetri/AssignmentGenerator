@@ -10,6 +10,8 @@ Sovelluksen tekstikäyttöliittymä sallii neljän erimerkkisen laskun, yhteen-,
 
 **Dokumentaatio**
 
+[Käyttöohje](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/kayttoohje.md)
+
 [Määrittelydokumentti](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/Maarittelydokumentti.md)
 
 [Tuntikirjanpito](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/tuntikirjanpito.md)
