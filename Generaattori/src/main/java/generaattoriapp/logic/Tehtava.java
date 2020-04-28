@@ -79,24 +79,39 @@ public class Tehtava {
         return vastaus;
     }
     /**
-    *
-    *@return double
-    *
+    *@return double nykyisen tehtävän vastaus
     */
     public double getVastaus() {
         return vastaus;
     }
+    /**
+     * @return String nykyisen tehtävän lauseke
+     */
     public String getLauseke() {
         return lauseke;
     }
+    /**
+     * Pyöristää nykyisen tehtävän vastauksen sadasosiin ja vertaa ehdotettua vastausta oikeaan
+     * 
+     * @param tarkistettava ehdotettu vastaus nykyiseen tehtävään
+     * @return true jos vastaus oikein false jos ei
+     */
     public boolean tarkistus(String tarkistettava) {
         double parse = Double.parseDouble(tarkistettava);
         double tulos = Math.round(vastaus * 100.0) / 100.0;
         return parse == tulos;
     }
+    /**
+     * Asettaa uuden tekijöiden määrän 1=2 tekijää, 2=3 tekijää yms MAX 4
+     * @param uusiVaikeus 
+     */
     public void setVaikeus(int uusiVaikeus) {
         this.vaikeus = uusiVaikeus;
     }
+    /**
+     * Asettaa uuden vaihtelun tekijöille, min 1, max uusiVaihtelu
+     * @param uusiVaihtelu 
+     */
     public void setVaihtelu(int uusiVaihtelu) {
         this.tekijaVaihtelu = uusiVaihtelu;
     }

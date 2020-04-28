@@ -14,35 +14,39 @@ package generaattoriapp.logic;
 public class Laskin {
     /**
      *
-     * @param lauseke
+     * @param lauseke annettu lauseke laskimelle
      * 
      * @return vastaus annettuun lausekkeeseen doublena
      */
     public double laske(final String lauseke) {
         return new Object() {
-            //Luodaan kokonaisuudessaan uusi objekti tänne
-            //joka kutsuu omaa metodiaan (mark for replacement)
             private int indeksi = -1;
             private int merkki = -1;
-            void seuraava() { //Asetetaan seuraava merkki
+            /**
+             * Asetetaan seuraava merkki
+             */
+            void seuraava() {
                 if (++indeksi < lauseke.length()) {
                     merkki = lauseke.charAt(indeksi);
                 } else {
                     merkki = -1;
                 }
             }
-
+            /**
+             * Liikutaan seuraavaan merkkiin lausekkeessa
+             */
             boolean poista(final int poistettava) { 
-            //Liikutaan seuraavaan merkkiin (char)
                 if (merkki == poistettava) {
                     seuraava();
                     return true;
                 }
                 return false;
             }
-            //laske metodi aloittaa tästä omalla parse()
-            //kutsullaan ja lähtee liikkumaan lausekkeessa
-            //merkki kerrallaan lauseke->termi->tekija
+            /**
+             * laske metodi aloittaa tästä omalla parse()
+             * kutsullaan ja lähtee liikkumaan lausekkeessa
+             * merkki kerrallaan lauseke->termi->tekija
+             */
             double parse() {
                 seuraava();
                 double x = parseLauseke();
@@ -51,7 +55,9 @@ public class Laskin {
                 }
                 return x;
             }
-
+            /**
+             * Käsittelee plussat ja miinukset
+             */
             double parseLauseke() {
                 double x = parseTermi();
                 for (;;) {
@@ -64,7 +70,9 @@ public class Laskin {
                     }
                 }
             }
-
+            /**
+             * Käsittelee kerrot ja jaot
+             */
             double parseTermi() {
                 double x = parseTekija();
                 for (;;) {
@@ -77,7 +85,9 @@ public class Laskin {
                     }
                 }
             }
-
+            /**
+             * Käsittelee etumerkit, sulkeet ja numerot
+             */
             double parseTekija() {
                 if (poista('+')) {
                     return parseTekija(); //Etumerkki plus
