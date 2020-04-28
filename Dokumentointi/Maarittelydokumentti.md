@@ -14,7 +14,7 @@ Sovellus on tarkoitettu vain yhdelle käyttäjälle
 
 -Satunnaisten tehtävien generointi valinnan perusteella (tehty)
 
--Merkkien sekoittelu tehtävissä
+-Merkkien sekoittelu tehtävissä (tehty)
 
 Esimerkit tehtävistä
 
@@ -22,7 +22,7 @@ Mikä merkki ratkaisee yhtälön?    4 _ 5 + 9 = 18
 
 Mikä on yhtälön arvo?             100 * 9 : 10 = _
 
-Ratkaise x:n arvo.                x * 4 : 6 = 24    (tehty)
+Ratkaise x:n arvo.                x * 4 : 6 = 24    (tehty) (tehty)
 
 
 *Laajennukset*
@@ -31,11 +31,15 @@ Ratkaise x:n arvo.                x * 4 : 6 = 24    (tehty)
 
 -Laskin käytettäväksi käyttäjälle (tehty)
 
--Satunnainen määrä tekijöitä / eri etumerkkejä / eri laskuja eli vaikeusasteen lisääminen
+-Satunnainen määrä tekijöitä (tehty, käyttäjä valitsee tekijöiden määrän)
+
+/ eri etumerkkejä 
+
+/ eri laskuja eli vaikeusasteen lisääminen (tehty, satunnaislasku)
 
 -Graafinen käyttöliittymä! (tehty)
 
--Plus/miinus ja kerto/jako -laskuja sekaisin
+-Plus/miinus ja kerto/jako -laskuja sekaisin (tehty)
 
 
 
