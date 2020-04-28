@@ -14,8 +14,10 @@
 | 20.4  | 2    | Graafisen käyttöliittymän alku ja ominaisuuksien luominen |
 | 20.4  | 2    | Ahkeran päivän lopuksi muutama testi lisää, laskimen lisääminen käyttäjälle |
 | 20.4  | 1    | Checkstylen ja jacocon toimivuus ja korjailu, sidenote: uudessa versiossa yllättävän verran vähemmän virheitä |
+| 28.4  | 0.5  | Koodikatselmoinnin ehdottamat virheviestit lisätty, ei enää komentoriville |
+| 28.4  | 0.5  | UI:ta puhdistettu, napit yms samankokoisia ja samoissa paikoissa |
+| 28.4  | 1    | Vaikeusaste lisätty, Laskin -luokkaa muokattu sopeutumaan tähän |
+| 28.4  | 0.5  | Satunnaislasku lisätty |
 |       |      |  |
 |       |      |  |
-|       |      |  |
-|       |      |  |
-| yht   | 16.5 |  | 
+| yht   | 19   |  | 
