@@ -25,14 +25,13 @@ Sovelluksen tekstikäyttöliittymä sallii neljän erimerkkisen laskun, yhteen-,
 
 **Komentorivitoiminnot**
 
-
-Testikattavuuden generointi *mvn jacoco:report*
-
 Suoritettavan jarin generointi *mvn package*
 
 Checkstyle tarkistus *mvn jxr:jxr checkstyle:checkstyle*
 
+Testikattavuuden generointi *mvn jacoco:report*
 
+Javadocin generointi *mvn javadoc:javadoc*
 
 mvn compile exec:java -Dexec.mainClass=generaattoriapp.main.Main
 
