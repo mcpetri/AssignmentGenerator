@@ -27,6 +27,8 @@ Ratkaise x:n arvo.                x * 4 : 6 = 24    (tehty) (tehty)
 
 *Laajennukset*
 
+-Erillasten tilastojen ylläpito, ratkaisu%, väärä vastaus%, monta tehtävää generoitu, laskimen käyttö lkm, yms kivaa pikkusälää
+
 -Laskin vaikeampia tehtäviä varten (tehty)
 
 -Laskin käytettäväksi käyttäjälle (tehty)
