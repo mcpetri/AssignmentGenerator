@@ -6,14 +6,17 @@
 package generaattoriapp.logic;
 
 /**
- *
+ * Laskin -luokka laskee sille annetun lausekkeen,
+ * joka ei sisällä välilyöntejä tai muita ylimäärisiä
+ * merkkejä kuin +,-,*,/,(,)
  * @author petri
  */
 public class Laskin {
     /**
      *
      * @param lauseke
-     * @return
+     * 
+     * @return vastaus annettuun lausekkeeseen doublena
      */
     public double laske(final String lauseke) {
         return new Object() {

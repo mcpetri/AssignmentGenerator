@@ -58,4 +58,12 @@
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
+        <action>
+            <actionName>CUSTOM-javadoc</actionName>
+            <displayName>javadoc</displayName>
+            <goals>
+                <goal>mvn</goal>
+                <goal>javadoc:javadoc</goal>
+            </goals>
+        </action>
     </actions>

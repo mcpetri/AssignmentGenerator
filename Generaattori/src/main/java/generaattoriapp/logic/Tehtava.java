@@ -19,6 +19,14 @@ public class Tehtava {
     int vaikeus = 1;
     String lauseke;
     double vastaus;
+    /**
+     * Luo lausekkeen määritellylä määrällä tekijöitä ja määritelyllä
+     * tekijävaihtelulla sekä annetulla merkillä
+     * 
+     * @param merkki kutsujan määrittämä merkki, jolle luodaan tehtävä, voi olla +,-,*,/,random
+     * 
+     * @return vastaus luotuun tehtävään
+     */
     public double luoTehtava(final String merkki) {
         vastaus = 0;
         int luku1 = rand.nextInt(tekijaVaihtelu) + 1;
@@ -70,6 +78,11 @@ public class Tehtava {
         vastaus = laskin.laske(tempLauseke);
         return vastaus;
     }
+    /**
+    *
+    *@return double
+    *
+    */
     public double getVastaus() {
         return vastaus;
     }
