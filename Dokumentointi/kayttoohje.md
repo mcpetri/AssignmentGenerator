@@ -24,6 +24,7 @@ Yhteen-, vähennys-, kerto-, jako- ja satunnaislaskut avaavat tehtäväruudun
 ![Imgur](https://i.imgur.com/JrPshdA.png)
 
 Laskin avaa sisäisen laskimen
+
 ![Imgur](https://i.imgur.com/ZfwgCgM.png)
 
 Vaikeusaste avaa valikon josta käyttäjä voi säätää tekijöiden vaihtelua ja tekijöiden määrää
