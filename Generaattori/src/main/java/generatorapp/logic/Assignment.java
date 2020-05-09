@@ -35,8 +35,8 @@ public class Assignment {
         int number4 = rand.nextInt(variation) + 1;
         int number5 = rand.nextInt(variation) + 1;
         int[] numbers = new int[5];
-        numbers[0] = number2; 
-        numbers[1] = number1; //Helpompi tehdä 5 lukua suoraan kuin
+        numbers[0] = number1; 
+        numbers[1] = number2; //Helpompi tehdä 5 lukua suoraan kuin
         numbers[2] = number3; //luoda dynaamisesti enemmän lukuja
         numbers[3] = number4;
         numbers[4] = number5;

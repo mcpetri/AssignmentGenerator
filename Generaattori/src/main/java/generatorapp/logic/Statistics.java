@@ -123,7 +123,7 @@ public class Statistics {
         newStatistics += difficultyNumber1 + "/";        //16
         newStatistics += difficultyNumber2 + "/";        //17
         newStatistics += difficultyNumber3 + "/";        //18
-        newStatistics += difficultyNumber4 + "/";      //19
+        newStatistics += difficultyNumber4 + "/";       //19
         File tempStatistics = new File("tempStatistics.txt");
         try {
             BufferedReader br = new BufferedReader(new FileReader("UsersAndStatistics.txt"));
