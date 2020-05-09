@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package generaattoriapp.main;
+package generatorapp.main;
 
-import generaattoriapp.ui.GeneraattoriUI;
+import generatorapp.ui.GeneratorUI;
 
 /**
  *
@@ -16,6 +16,6 @@ public class Main  {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        GeneraattoriUI.main(args);
+        GeneratorUI.main(args);
     }
 }
