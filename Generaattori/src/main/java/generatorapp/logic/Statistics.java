@@ -26,7 +26,7 @@ public class Statistics {
     private int divisionNumber = 0;
     private int randomNumber = 0;
     private int calculatorNumber = 0;
-    private int errorNumber= 0;
+    private int errorNumber = 0;
     private int variationNumber1 = 0;
     private int variationNumber2 = 0;
     private int variationNumber3 = 0;
@@ -60,25 +60,25 @@ public class Statistics {
         if (!checkStatistics(user)) {
             String statisticsLine = "";                     //Index number
             statisticsLine += user+"/";                     //0
-            statisticsLine += assignmentNumber+"/";         //1
-            statisticsLine += correctPercentage+"/";        //2
-            statisticsLine += correctNumber+"/";            //3
-            statisticsLine += incorrectPercentage+"/";      //4
-            statisticsLine += incorrectNumber+"/";          //5
-            statisticsLine += additionNumber+"/";           //6
-            statisticsLine += subtractionNumber+"/";        //7
-            statisticsLine += multiplicationNumber+"/";     //8
-            statisticsLine += divisionNumber+"/";           //9
-            statisticsLine += randomNumber+"/";             //10
-            statisticsLine += calculatorNumber+"/";         //11
-            statisticsLine += errorNumber+"/";              //12
-            statisticsLine += variationNumber1+"/";         //13
-            statisticsLine += variationNumber2+"/";         //14
-            statisticsLine += variationNumber3+"/";         //15
-            statisticsLine += difficultyNumber1+"/";        //16
-            statisticsLine += difficultyNumber2+"/";        //17
-            statisticsLine += difficultyNumber3+"/";        //18
-            statisticsLine += difficultyNumber4+"/";        //19    
+            statisticsLine += assignmentNumber + "/";         //1
+            statisticsLine += correctPercentage + "/";        //2
+            statisticsLine += correctNumber + "/";            //3
+            statisticsLine += incorrectPercentage + "/";      //4
+            statisticsLine += incorrectNumber + "/";          //5
+            statisticsLine += additionNumber + "/";           //6
+            statisticsLine += subtractionNumber + "/";        //7
+            statisticsLine += multiplicationNumber + "/";     //8
+            statisticsLine += divisionNumber + "/";           //9
+            statisticsLine += randomNumber + "/";             //10
+            statisticsLine += calculatorNumber + "/";         //11
+            statisticsLine += errorNumber + "/";              //12
+            statisticsLine += variationNumber1 + "/";         //13
+            statisticsLine += variationNumber2 + "/";         //14
+            statisticsLine += variationNumber3 + "/";         //15
+            statisticsLine += difficultyNumber1 + "/";        //16
+            statisticsLine += difficultyNumber2 + "/";        //17
+            statisticsLine += difficultyNumber3 + "/";        //18
+            statisticsLine += difficultyNumber4 + "/";        //19    
             
             try {
                 FileWriter writer = new FileWriter("UsersAndStatistics.txt");
@@ -103,43 +103,43 @@ public class Statistics {
         return tempStats;
     }
     
-    public void increaseAssignmentNumber(){
+    public void increaseAssignmentNumber() {
         this.assignmentNumber++;
     }
-    public void increaseCorrectPercentage(){
+    public void increaseCorrectPercentage() {
         this.correctPercentage++;
     }
-    public void increaseCorrectNumber(){
+    public void increaseCorrectNumber() {
         this.correctNumber++;
     }
-    public void increaseIncorrectPercentage(){
+    public void increaseIncorrectPercentage() {
         this.incorrectPercentage++;
     }
-    public void increaseIncorrectNumber(){
+    public void increaseIncorrectNumber() {
         this.incorrectNumber++;
     }
-    public void increaseAdditionNumber(){
+    public void increaseAdditionNumber() {
         this.additionNumber++;
     }
-    public void increaseSubtractionNumber(){
+    public void increaseSubtractionNumber() {
         this.subtractionNumber++;
     }
-    public void increaseMultiplicationNumber(){
+    public void increaseMultiplicationNumber() {
         this.multiplicationNumber++;
     }
-    public void increaseDivisionNumber(){
+    public void increaseDivisionNumber() {
         this.divisionNumber++;
     }
     public void increaseRandomNumber() {
         this.randomNumber++;
     }
-    public void increaseCalculatorNumber(){
+    public void increaseCalculatorNumber() {
         this.calculatorNumber++;
     }
-    public void increaseErrorNumber(){
+    public void increaseErrorNumber() {
         this.errorNumber++;
     }
-    public void increaseVarition(int varition){
+    public void increaseVarition(int varition) {
         switch (varition) {
             case 1:
                 this.variationNumber1++;
@@ -154,7 +154,7 @@ public class Statistics {
                 break;
         }
     }
-    public void increaseDifficulty(int difficulty){
+    public void increaseDifficulty(int difficulty) {
         switch (difficulty) {
             case 1:
                 this.difficultyNumber1++;
