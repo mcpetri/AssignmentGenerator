@@ -109,7 +109,7 @@ public class Assignment {
         this.difficulty = newDifficulty;
     }
     /**
-     * Asettaa uuden vaihtelun tekijöille, min 1, max uusiVaihtelu
+     * Asettaa uuden vaihtelun tekijöille, min 1, max newVariation
      * @param newVariation 
      */
     public void setVariation(int newVariation) {

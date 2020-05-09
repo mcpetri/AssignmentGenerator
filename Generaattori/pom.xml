@@ -40,7 +40,8 @@
                 <version>0.8.3</version>
                 <configuration>
                     <excludes>
-                        <exclude>generaattoriapp/ui/*</exclude>
+                        <exclude>generatorapp/ui/*</exclude>
+                        <exclude>generatorapp/main/*</exclude>
                     </excludes>
                 </configuration>
                 <executions>
@@ -83,7 +84,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>generaattoriapp.main.Main</mainClass>
+                                    <mainClass>generatorapp.main.Main</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

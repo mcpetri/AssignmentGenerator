@@ -8,6 +8,7 @@ package generatorapp.ui;
 import generatorapp.logic.Calculator;
 import generatorapp.logic.Assignment;
 import generatorapp.logic.Statistics;
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -26,42 +27,37 @@ import javafx.stage.Popup;
  */
 public class GeneratorUI extends Application {
     
+    String user;
     Stage window;
-    Scene startScene, assignmentScene, calculatorScene, difficultyScene;
+    Scene startScene, assignmentScene, calculatorScene, difficultyScene, loginScene;
     VBox leftMenu;
     Assignment assignment = new Assignment();
     Calculator calculator = new Calculator();
     Statistics statistics = new Statistics();
     
+    /**
+     * Aloittaa ohjelman avaamalla login Scenen
+     * ja luomalla leftMenun
+     * @param primaryStage
+     * @throws Exception 
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Tehtävägeneraattori");
         //AloitusMenu
         createLeftMenu();
-        Label startMessage = new Label("Tervetuloa tehtävägeneraattoriin!\n"
-                                         + "Ole hyvä ja valitse toiminto\n\n"
-                                         + "Huom! Käytä pistettä . desimaalien kanssa\n"
-                                         + "ja pyöristä vastaus tarvittaessa sadasosiin");
+        Label startMessage = new Label("You're not suppoused to see this");
         BorderPane startSetting = new BorderPane();
-        startSetting.setPadding(new Insets(10,10,10,10));
-        startSetting.setLeft(leftMenu);
         startSetting.setCenter(startMessage);
         startScene = new Scene(startSetting, 480, 350);
         primaryStage.setScene(startScene);
         window = primaryStage;
         window.show();
+        login();
         int status = statistics.generateStatisticsFile();
         switch (status) {
             case -1:
                 popupWindow("Virhe tilastotiedostoa luotaessa");
-                break;
-            case 1:
-                popupWindow("Tilastotiedosto luotu");
-                break;
-            case 2:
-                popupWindow("Tilastotiedosto oli jo luotu");
-                break;
-            default:
                 break;
         }
     }
@@ -80,23 +76,53 @@ public class GeneratorUI extends Application {
         start.setMinWidth(100);
         Button addition = new Button();
         addition.setText("Yhteenlasku");
-        addition.setOnAction(e -> assignment("+"));
+        addition.setOnAction(e -> {
+            assignment("+", -1);
+            statistics.increaseAdditionNumber();
+            statistics.increaseAssignmentNumber();
+            statistics.increaseDifficulty(assignment.getDifficulty());
+            statistics.increaseVarition(assignment.getVariation());
+                });
         addition.setMinWidth(100);
         Button subtraction=  new Button();
         subtraction.setText("Vähennyslasku");
-        subtraction.setOnAction(e -> assignment("-"));
+        subtraction.setOnAction(e -> {
+            assignment("-", -1);
+            statistics.increaseSubtractionNumber();
+            statistics.increaseAssignmentNumber();
+            statistics.increaseDifficulty(assignment.getDifficulty());
+            statistics.increaseVarition(assignment.getVariation());
+                });
         subtraction.setMinWidth(100);
         Button multiplication = new Button();
         multiplication.setText("Kertolasku");
-        multiplication.setOnAction(e -> assignment("*"));
+        multiplication.setOnAction(e -> {
+            assignment("*", -1);
+            statistics.increaseMultiplicationNumber();
+            statistics.increaseAssignmentNumber();
+            statistics.increaseDifficulty(assignment.getDifficulty());
+            statistics.increaseVarition(assignment.getVariation());
+                });
         multiplication.setMinWidth(100);
         Button division = new Button();
         division.setText("Jakolasku");
-        division.setOnAction(e -> assignment(":"));
+        division.setOnAction(e -> {
+            assignment(":", -1);
+            statistics.increaseDivisionNumber();
+            statistics.increaseAssignmentNumber();
+            statistics.increaseDifficulty(assignment.getDifficulty());
+            statistics.increaseVarition(assignment.getVariation());
+                });
         division.setMinWidth(100);
         Button random = new Button();
         random.setText("Satunnaislasku");
-        random.setOnAction(e -> assignment("random"));
+        random.setOnAction(e -> {
+            assignment("random", -1);
+            statistics.increaseRandomNumber();
+            statistics.increaseAssignmentNumber();
+            statistics.increaseDifficulty(assignment.getDifficulty());
+            statistics.increaseVarition(assignment.getVariation());
+                });
         random.setMinWidth(100);
         Button calc = new Button();
         calc.setText("Laskin");
@@ -129,7 +155,7 @@ public class GeneratorUI extends Application {
         startScene = new Scene(startSetting, 480, 350);
         window.setScene(startScene);
     }
-    public void assignment(String symbol) {
+    public void assignment(String symbol, int correct) {
         assignment.createAssignment(symbol);
         VBox assignmentComponents = new VBox();
         assignmentComponents.setSpacing(10);
@@ -139,18 +165,26 @@ public class GeneratorUI extends Application {
         Button check = new Button();
         check.setText("Tarkista vastaus");
         Label checkMessage = new Label("");
+        if(correct == 1) {
+            checkMessage.setText("Vastauksesi oli oikein");
+        }
         assignmentComponents.getChildren().addAll(expression,answer,check,checkMessage);
         check.setOnAction(e -> {
             try {
                 if (assignment.check(answer.getText())) {
-                    checkMessage.setText("Oikein!");
+                    assignment(symbol, 1);
+                    statistics.increaseCorrectNumber();
+                    statistics.increaseCorrectPercentage();
                 } else {
                     checkMessage.setText("Väärin");
+                    statistics.increaseIncorrectNumber();
+                    statistics.increaseIncorrectPercentage();
                 }
             } catch (Exception error) { //Virhe popup
                 popupWindow("Virhe, yritä uudelleen\n\n"
                         + "Tarkista että käytät syötteessä vain numeroita\n"
                         + "ja tarvittaessa desimaalipistettä");
+                statistics.increaseErrorNumber();
             }
         });
         if (symbol.equals("random")) {
@@ -186,6 +220,7 @@ public class GeneratorUI extends Application {
             try {
                 String result = String.valueOf(Math.round(calculator.count(expression.getText()) * 100.0) / 100.0);
                 answer.setText("\n\nVastaus on = " + result + "\n\n");
+                statistics.increaseCalculatorNumber();
             }
             catch (Exception error) { //Virhe popup
                 popupWindow("Virhe, yritä uudelleen\n\n"
@@ -193,6 +228,7 @@ public class GeneratorUI extends Application {
                         + "- numeroita\n"
                         + "- merkkejä + , - , * , /\n"
                         + "- oikean verran sulkuja ( )");
+                statistics.increaseErrorNumber();
             }
         });
         calculatorComponents.getChildren().addAll(title, expression, count, answer, guide);
@@ -258,8 +294,12 @@ public class GeneratorUI extends Application {
         difficultyScene = new Scene(difficultySetting, 480, 350);
         window.setScene(difficultyScene);  
     }
-    public void statistics() {
-        String[] stats = new String[19];
+    public void statistics() {     
+        String[] stats = statistics.parseStatistics(statistics.getStatistics(user));
+        double correctPercentage = Double.valueOf(stats[3]) / (Double.valueOf(stats[3]) + Double.valueOf(stats[5]));
+        double roundedCorrect = Math.round(correctPercentage * 10000.0) / 100.0;
+        double incorrectPercentage = Double.valueOf(stats[5]) / (Double.valueOf(stats[3]) + Double.valueOf(stats[5]));
+        double roundedIncorrect = Math.round(incorrectPercentage * 10000.0) / 100.0;
         Label statisticsText = new Label(
                 "Generoituja tehtäviä\n"
                 + "Oikeinvastausprosentti\n"
@@ -281,25 +321,25 @@ public class GeneratorUI extends Application {
                 + "Tehtäviä generoitu, kun tekijöitä 4\n"
                 + "Tehtäviä generoitu, kun tekijöitä 5");     
         Label statisticsNumbers = new Label(
-                "  = "+stats[1]+"       \n"
-                + "  = "+stats[2]+"       \n"
-                + "  = "+stats[3]+"       \n"
-                + "  = "+stats[4]+"       \n"
-                + "  = "+stats[5]+"       \n"
-                + "  = "+stats[6]+"       \n"
-                + "  = "+stats[7]+"       \n"
-                + "  = "+stats[8]+"       \n"
-                + "  = "+stats[8]+"       \n"
-                + "  = "+stats[9]+"       \n"
-                + "  = "+stats[10]+"      \n"
-                + "  = "+stats[11]+"      \n"
-                + "  = "+stats[12]+"      \n"
-                + "  = "+stats[13]+"      \n"
-                + "  = "+stats[14]+"      \n"
-                + "  = "+stats[15]+"      \n"
-                + "  = "+stats[15]+"      \n"
-                + "  = "+stats[16]+"      \n"
-                + "  = "+stats[17]+"      \n"
+                "  = "+stats[1]+"       \n"                         //tehtävien lkm
+                + "  = "+(roundedCorrect)+"       \n"           //oikein %
+                + "  = "+stats[3]+"       \n"                       //oikein lkm
+                + "  = "+(roundedIncorrect)+"       \n"         //väärin %
+                + "  = "+stats[5]+"       \n"                       //väärin lkm
+                + "  = "+stats[6]+"       \n"       //yhteen
+                + "  = "+stats[7]+"       \n"       //vähennys
+                + "  = "+stats[8]+"       \n"       //kerto
+                + "  = "+stats[9]+"       \n"       //jako
+                + "  = "+stats[10]+"      \n"       //satunnais
+                + "  = "+stats[11]+"      \n"       //laskin
+                + "  = "+stats[12]+"      \n"       //virhe
+                + "  = "+stats[13]+"      \n"       //vaihtelu10
+                + "  = "+stats[14]+"      \n"       //vaihtelu100
+                + "  = "+stats[15]+"      \n"       //vaihtelu1000
+                + "  = "+stats[16]+"      \n"       //vaikeus2
+                + "  = "+stats[17]+"      \n"       //vaikeus3
+                + "  = "+stats[18]+"      \n"       //vaikeus4
+                + "  = "+stats[19]+"      \n"       //vaikeus5
         );
         HBox statsTextNumbers = new HBox();
         statsTextNumbers.getChildren().addAll(statisticsText, statisticsNumbers);
@@ -310,8 +350,35 @@ public class GeneratorUI extends Application {
         difficultyScene = new Scene(statisticsSetting, 480, 350);
         window.setScene(difficultyScene); 
     }
-    
-    
+    public void login() {
+        Label guide = new Label("   Ilmoita käyttäjä, jolle haluat kirjautua");
+        TextField userName = new TextField();
+        Button proceed = new Button("Kirjaudu");
+        proceed.setOnAction(e -> {
+            String tempUserName = String.valueOf(userName.getText());
+            String parsedUserName = tempUserName.replaceAll("\\s","");
+            try {
+                statistics.createNewStatistics(parsedUserName);
+            } catch (IOException error) {
+                popupWindow("Virhe käyttäjän tiedostoriviä luotaessa");
+            }
+            this.user = parsedUserName;
+            window.setTitle("Tehtävägeneraattori - käyttäjä "+user);
+            statistics.setUser(user);
+            start();
+        });
+        HBox textAndButton = new HBox();
+        textAndButton.getChildren().addAll(userName, proceed);
+        textAndButton.setPadding(new Insets(10,10,10,10));
+        VBox loginComponents = new VBox();
+        loginComponents.setPadding(new Insets(10,10,10,10));
+        loginComponents.getChildren().addAll(guide, textAndButton);
+        BorderPane loginSetting = new BorderPane();
+        loginSetting.setPadding(new Insets(10,10,10,10));
+        loginSetting.setCenter(loginComponents);
+        loginScene = new Scene(loginSetting, 300, 100);
+        window.setScene(loginScene); 
+    }
     public void popupWindow(String text) {
         Popup popup = new Popup();
         popup.setAutoHide(true);
@@ -324,5 +391,4 @@ public class GeneratorUI extends Application {
         popup.getContent().add(popupSetting);
         popup.show(window);
     }
-    
 }
