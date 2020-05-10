@@ -55,7 +55,7 @@ public class Assignment {
             if (character.equals("*")) {
                 tempExpression += "*";
             }
-            if (character.equals(":")) {
+            if (character.equals("/")) {
                 tempExpression += "/";
             }
             if (character.equals("random")) {

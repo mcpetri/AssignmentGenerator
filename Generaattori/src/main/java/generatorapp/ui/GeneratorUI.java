@@ -44,12 +44,10 @@ public class GeneratorUI extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Tehtävägeneraattori");
-        //AloitusMenu
+        //Aloitus
         createLeftMenu();
-        Label startMessage = new Label("You're not suppoused to see this");
         BorderPane startSetting = new BorderPane();
-        startSetting.setCenter(startMessage);
-        startScene = new Scene(startSetting, 480, 350);
+        startScene = new Scene(startSetting, 300, 100);
         primaryStage.setScene(startScene);
         window = primaryStage;
         window.show();
@@ -68,6 +66,9 @@ public class GeneratorUI extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+    /**
+     * Luo vasemmalla olevan menun ja sen napit
+     */
     public void createLeftMenu() {
         //Menun napit
         Button start = new Button();
@@ -107,7 +108,7 @@ public class GeneratorUI extends Application {
         Button division = new Button();
         division.setText("Jakolasku");
         division.setOnAction(e -> {
-            assignment(":", -1);
+            assignment("/", -1);
             statistics.increaseDivisionNumber();
             statistics.increaseAssignmentNumber();
             statistics.increaseDifficulty(assignment.getDifficulty());
@@ -143,6 +144,9 @@ public class GeneratorUI extends Application {
         leftMenu.getChildren().addAll(multiplication, division, random, calc);
         leftMenu.getChildren().addAll(difficulty, stats);
     }
+    /**
+     * Luo aloitusruudun ja näyttää sen
+     */
     public void start() {
         Label startMessage = new Label("Tervetuloa tehtävägeneraattoriin!\n"
                                          + "Ole hyvä ja valitse toiminto\n\n"
@@ -155,6 +159,12 @@ public class GeneratorUI extends Application {
         startScene = new Scene(startSetting, 480, 350);
         window.setScene(startScene);
     }
+    /**
+     * Luo tehtävännäkymän annetulla symbolilla ja asettaa sen
+     * random satunnaisille symboleille
+     * @param symbol määrittää luodun tehtävän +, -, *, :, random
+     * @param correct 1 jos edellinen vastaus oikein, -1 jos edellinen vastaus väärin
+     */
     public void assignment(String symbol, int correct) {
         assignment.createAssignment(symbol);
         VBox assignmentComponents = new VBox();
@@ -198,6 +208,9 @@ public class GeneratorUI extends Application {
         assignmentScene = new Scene(assingmentSetting, 480, 350);
         window.setScene(assignmentScene);
     }
+    /**
+     * Luo laskinnäkymän ja asettaa sen
+     */
     public void calculator() {
         VBox calculatorComponents = new VBox();
         calculatorComponents.setSpacing(10);
@@ -239,6 +252,9 @@ public class GeneratorUI extends Application {
         calculatorScene = new Scene(laskinAsettelu, 480, 350);
         window.setScene(calculatorScene); 
     }
+    /**
+     * Luo vaikeusasettelunäkymän ja asettaa sen
+     */
     public void difficulty() {
         Label variationLabel = new Label("Voit vaihtaa tästä tekijöiden suuruutta");
         HBox variationButtons = new HBox();
@@ -294,6 +310,9 @@ public class GeneratorUI extends Application {
         difficultyScene = new Scene(difficultySetting, 480, 350);
         window.setScene(difficultyScene);  
     }
+    /**
+     * Luo tilastonäkymän ja asettaa sen
+     */
     public void statistics() {     
         String[] stats = statistics.parseStatistics(statistics.getStatistics(user));
         double correctPercentage = Double.valueOf(stats[3]) / (Double.valueOf(stats[3]) + Double.valueOf(stats[5]));
@@ -350,6 +369,9 @@ public class GeneratorUI extends Application {
         difficultyScene = new Scene(statisticsSetting, 480, 350);
         window.setScene(difficultyScene); 
     }
+    /**
+     * Luo kirjautumisnäkymän ja asettaa sen
+     */
     public void login() {
         Label guide = new Label("   Ilmoita käyttäjä, jolle haluat kirjautua");
         TextField userName = new TextField();
@@ -379,6 +401,10 @@ public class GeneratorUI extends Application {
         loginScene = new Scene(loginSetting, 300, 100);
         window.setScene(loginScene); 
     }
+    /**
+     * Luo popup -ikkunan annetulla tekstillä
+     * @param text 
+     */
     public void popupWindow(String text) {
         Popup popup = new Popup();
         popup.setAutoHide(true);
