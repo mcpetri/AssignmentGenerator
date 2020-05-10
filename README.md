@@ -28,20 +28,20 @@ Sovellus on Helsingin yliopiston kevään 2020 ohjelmistotekniikan kurssin harjo
 **Testien suoritus**
 
 Testit suoritetaan komennolla 
-´´´
+```
 *mvn test*
-´´´
+```
 
 Testikattavuusraportti suoritetaan komennolla 
-´´´
+```
 *mvn jacoco:report* 
-´´´
+```
 ja avautuu selaimeen tiedostosta target/site/jacoco/index.html
 
 Checkstyleraportti suoritetaan komennolla 
-´´´
+```
 *mvn jxr:jxr checkstyle:checkstyle* 
-´´´
+```
 
 ja avautuu selaimeen tiedostosta target/site/checkstyle.html
 
