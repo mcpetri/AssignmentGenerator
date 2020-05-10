@@ -28,4 +28,5 @@ Sovellukseen kirjaudutaan ensin Login -näkymästä, jonka jälkeen käyttäjä 
 
 * Salasana ja salauksen lisäys tilastoihin
 * Eri tehtävätyypit
+* Tehtävänäkymästä voi poistua toiseen näkymään, mutta alkuperäinen tehtävänäkymä muistaa mikä tehtävä jäi kesken
 
