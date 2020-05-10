@@ -21,7 +21,7 @@ Sovellus on Helsingin yliopiston kevään 2020 ohjelmistotekniikan kurssin harjo
 
 [Viikko 5](https://github.com/mcpetri/ot-harjoitustyo/releases/tag/viikko5)
 
-[Loppupalautus]()
+[Loppupalautus](https://github.com/mcpetri/AssignmentGenerator/releases/tag/1.0)
 
 ## Komentorivitoiminnot
 
