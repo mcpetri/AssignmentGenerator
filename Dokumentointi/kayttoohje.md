@@ -9,6 +9,10 @@ Ohjelma käynnistetään komennolla java -jar Generaattori.jar
 
 ## Tehtävien tekemisen aloittaminen
 
+Ensimmäiseksi kirjaudut omalla käyttäjätunnuksella, jolle haluat tallentaa tilastojasi
+
+![Imgur](https://i.imgur.com/RMu19C9.png)
+
 Saavut aloitusruutuun
 
 ![Imgur](https://i.imgur.com/OL5xtYL.png)
@@ -30,3 +34,7 @@ Laskin avaa sisäisen laskimen, ohje avaa popup -ikkunan joka ohjeistaa laskimen
 Vaikeusaste avaa valikon josta käyttäjä voi säätää tekijöiden vaihtelua ja tekijöiden määrää
 
 ![Imgur](https://i.imgur.com/cy8kXxf.png)
+
+Tilastot avaa näkymän, josta käyttäjä voi tarkastella käyttäjätunnukseen liitettyjä tietoja
+
+![Imgur](https://imgur.com/Aj7dr7X)
