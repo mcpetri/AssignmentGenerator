@@ -24,6 +24,7 @@
 | 9.5   | 1    | Statistics -luokan testit, testikattavuuden lisääminen |
 | 9.5   | 1    | Login -näkymän lisääminen ja implementointi tilastoihin |
 | 10.5  | 3    | Dokumentaation ja repositorion päivitys |
+| 10.5  | 1    | Loppupalautuksen lisääminen ja testaaminen etäkoneella |
 |       |      |  |
 |       |      |  |
 |       |      |  |
@@ -31,5 +32,4 @@
 |       |      |  |
 |       |      |  |
 |       |      |  |
-|       |      |  |
-| yht   | 30.5   |  | 
+| yht   | 31.5   |  | 
