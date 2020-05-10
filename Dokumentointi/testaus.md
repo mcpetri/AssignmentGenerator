@@ -24,4 +24,7 @@ Testaamatta jäi tilanteet, joissa ulkopuolinen sekaantuu tiedostoon kesken suor
 
 Suoritettiin manuaalisesta lataamalla tiedosto ja suorittamalla [määrittelydokumentin](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/Maarittelydokumentti.md) ominaisuudet [käyttöohjeen](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/kayttoohje.md) avulla
 
+## Sovellukseen jääneet ongelmat
+
+Statistics -luokan testit käyttävät samaa tiedostoa kuin loppuohjelma, jolloin jos käyttäjä käyttää "user" nimistä tunnusta saattavat testit mennä sekaisin
 
