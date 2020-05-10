@@ -73,7 +73,7 @@ public class AssignmentTest {
     
     @Test
     public void amountOfCharacterTest() {
-        testAssignment.setDifficulty(4); //5 tekijää 0-1000, 4 symbolia
+        testAssignment.setDifficulty(4); //5 tekijää 1-1000, 4 symbolia
         testAssignment.setVariation(1000);
         for (int i=0; i<100; i++) {
             testAssignment.createAssignment("random");
@@ -81,10 +81,10 @@ public class AssignmentTest {
             String testable = tempTest.replaceAll("Ratkaise x, kun \nx = ","");
             if (testable.length() < 9) {
                 System.out.println(testable);
-                fail("too few chars");     //Minimissään 5 tekijää 0-9, 4 symbolia
+                fail("too few chars");     //Minimissään 5 tekijää 1-9, 4 symbolia = 9 chars
             } else if (testable.length() > 24) {
                 System.out.println(testable);
-                fail("too many chars");     //Maksimissaan 5 tekijää 1000, 4 symbolia
+                fail("too many chars");     //Maksimissaan 5 tekijää 1000, 4 symbolia = (5*4)+4 = 24 chars
             }
         }
     }
