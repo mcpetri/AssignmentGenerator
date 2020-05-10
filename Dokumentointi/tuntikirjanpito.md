@@ -23,6 +23,7 @@
 | 9.5   | 4    | Statistics -luokan luominen ja sen lisääminen UI:hin |
 | 9.5   | 1    | Statistics -luokan testit, testikattavuuden lisääminen |
 | 9.5   | 1    | Login -näkymän lisääminen ja implementointi tilastoihin |
+| 10.5  | 3    | Dokumentaation ja repositorion päivitys |
 |       |      |  |
 |       |      |  |
 |       |      |  |
@@ -31,5 +32,4 @@
 |       |      |  |
 |       |      |  |
 |       |      |  |
-|       |      |  |
-| yht   | 27.5   |  | 
+| yht   | 30.5   |  | 
