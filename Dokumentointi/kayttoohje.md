@@ -6,7 +6,7 @@ Lataa tiedosto [AssignmentGenerator.jar](https://github.com/mcpetri/AssignmentGe
 
 Suoritettavan jarin generointi *mvn package*
 
-Ohjelma käynnistetään komennolla *java -jar Generaattori.jar*
+Ohjelma käynnistetään komennolla *java -jar AssignmentGenerator.jar*
 
 ## Tehtävien tekemisen aloittaminen
 
