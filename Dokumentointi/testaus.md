@@ -22,6 +22,6 @@ Testaamatta jäi tilanteet, joissa ulkopuolinen sekaantuu tiedostoon kesken suor
 
 **Järjestelmätestaus**
 
-Suoritettiin manuaalisesta lataamalla tiedosto ja suorittamalla määrittelydokumentin ominaisuudet käyttöohjeen avulla
+Suoritettiin manuaalisesta lataamalla tiedosto ja suorittamalla [määrittelydokumentin](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/Maarittelydokumentti.md) ominaisuudet [käyttöohjeen](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/kayttoohje.md) avulla
 
 
