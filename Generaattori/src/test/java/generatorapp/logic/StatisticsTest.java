@@ -52,6 +52,11 @@ public class StatisticsTest {
     }
     @Test
     public void parseGetStatistics() {
+        try {
+            testStats.createNewStatistics(testUser);
+        } catch (IOException e) {
+            fail();
+        }
         String stats = testStats.getStatistics(testUser);
         String[] arrayStats = testStats.parseStatistics(stats);
         assertEquals(true, arrayStats[0].equals(testUser));

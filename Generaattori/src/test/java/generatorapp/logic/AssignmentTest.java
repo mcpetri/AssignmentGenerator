@@ -41,7 +41,7 @@ public class AssignmentTest {
     
     @Test
     public void testDivision() {
-        testAssignment.createAssignment(":");
+        testAssignment.createAssignment("/");
         assertEquals(true,testAssignment.getExpression().contains("/"));
     }
     
