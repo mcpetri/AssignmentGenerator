@@ -14,7 +14,7 @@ Sovellus on Helsingin yliopiston kevään 2020 ohjelmistotekniikan kurssin harjo
 
 [Arkkitehtuuri](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/arkkitehtuuri.md)
 
-[Testaus]()
+[Testaus](https://github.com/mcpetri/AssignmentGenerator/blob/master/Dokumentointi/testaus.md)
 
 
 ## Releaset
