@@ -18,4 +18,10 @@ Rivikattavuus on 95% sekä haarautumiskattavuus 85% (Saattaa vaihdella lievästi
 
 ![Imgur](https://i.imgur.com/E4Dhhh5.png)
 
+Testaamatta jäi tilanteet, joissa ulkopuolinen sekaantuu tiedostoon kesken suorituksen tai tiedoston lukemisessa on ongelmia.
+
+**Järjestelmätestaus*
+
+Suoritettiin manuaalisesta lataamalla tiedosto ja suorittamalla määrittelydokumentin ominaisuudet käyttöohjeen avulla
+
 
