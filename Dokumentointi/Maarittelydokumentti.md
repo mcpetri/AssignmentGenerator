@@ -1,5 +1,30 @@
 **Määrittelydokumentti**
 
+## Sovelluksen tarkoitus
+
+Sovellus toimii tehtävägeneraattorina matematiikan perustehtäville. Käyttäjän päätösten mukaan sovellus tuottaa tehtävien käyttäjän asettamien parametrien mukaan. Sovellus pitää myös paikallisella tiedostolla tilastoja melkein kaikesta mitä sillä voi tehdä.
+
+## Käyttäjät
+
+Sovellus on sinänsä naivii, että se vaatii vain käyttäjätunnuksen, jolle se tallentaa tilastoja ilman salasanaa ja tallentaa tiedot ilman salausta. Oletuksena on, että samaa talletustiedostoa käyttävät käyttäjät ovat hyvämielisiä eivätkä yritä häiritä toisiaan.
+
+## Käyttöliittymä - UI
+
+Sovellukseen kirjaudutaan ensin Login -näkymästä, jonka jälkeen käyttäjä pääsee itse generaattorinäkymään, jossa käyttäjä voi valita vasemmalta olevasta menusta toimintoja
+
+![](https://imgur.com/RMu19C9)
+
+![](https://imgur.com/OL5xtYL)
+
+
+
+
+
+
+
+
+
+
 *Sovelluksen tarkoitus*
 
 Tarkoituksena on tehdä satunnainen matematiikkatehtävägeneraattori käyttäen + / - / : / * -merkkejä.
