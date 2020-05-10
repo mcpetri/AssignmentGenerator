@@ -42,16 +42,23 @@ Checkstyleraportti suoritetaan komennolla
 ```
 *mvn jxr:jxr checkstyle:checkstyle* 
 ```
-
 ja avautuu selaimeen tiedostosta target/site/checkstyle.html
 
 **Suoritettava jar**
 
-Suoritettavan jarin generointi komennolla *mvn package* ja löytyy hakemistosta target nimellä AssignmentGenerator-1.0-SNAPSHOT
+Suoritettavan jarin generointi komennolla 
+```
+*mvn package*
+```
+ja löytyy hakemistosta target nimellä AssignmentGenerator-1.0-SNAPSHOT
 
 **JavaDoc**
 
-Javadocin generointi komennolla *mvn javadoc:javadoc* ja avautuu selaimeen tiedostosta target/site/apidocs/index.html
+Javadocin generointi komennolla 
+```
+*mvn javadoc:javadoc*
+```
+ja avautuu selaimeen tiedostosta target/site/apidocs/index.html
 
 
 
