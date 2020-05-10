@@ -1,2 +1,4 @@
-/Generaattori/nbproject/
-/Generaattori/target/
+target
+/nbproject/
+target
+nbactions.xml
