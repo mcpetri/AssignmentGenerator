@@ -25,6 +25,11 @@ Sovellus on Helsingin yliopiston kevään 2020 ohjelmistotekniikan kurssin harjo
 
 ## Komentorivitoiminnot
 
+Ohjelman voi suorittaa komennolla
+```
+mvn compile exec:java -Dexec.mainClass=generatorapp.main.Main
+```
+
 **Testien suoritus**
 
 Testit suoritetaan komennolla 
@@ -50,7 +55,10 @@ Suoritettavan jarin generointi komennolla
 ```
 *mvn package*
 ```
-ja löytyy hakemistosta target nimellä AssignmentGenerator-1.0-SNAPSHOT
+ja löytyy hakemistosta target nimellä AssignmentGenerator-1.0-SNAPSHOT, jonka voi suorittaa komennolla
+```
+java -jar AssignmentGenerator-1.0-SNAPSHOT.jar
+```
 
 **JavaDoc**
 
