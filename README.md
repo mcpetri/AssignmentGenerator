@@ -25,15 +25,24 @@ Sovellus on Helsingin yliopiston kevään 2020 ohjelmistotekniikan kurssin harjo
 
 ## Komentorivitoiminnot
 
-Suoritettavan jarin generointi *mvn package*
+**Testien suoritus**
 
-Checkstyle tarkistus *mvn jxr:jxr checkstyle:checkstyle*
+Testit suoritetaan komennolla *mvn test*
 
-Testikattavuuden generointi *mvn jacoco:report*
+Testikattavuusraportti suoritetaan komennolla *mvn jacoco:report* ja avautuu selaimeen tiedostosta target/site/jacoco/index.html
 
-Javadocin generointi *mvn javadoc:javadoc*
+Checkstyleraportti suoritetaan komennolla *mvn jxr:jxr checkstyle:checkstyle* ja avautuu selaimeen tiedostosta target/site/checkstyle.html
 
-mvn compile exec:java -Dexec.mainClass=generaattoriapp.main.Main
+**Suoritettava jar**
+
+Suoritettavan jarin generointi komennolla *mvn package* ja löytyy hakemistosta target nimellä AssignmentGenerator-1.0-SNAPSHOT
+
+**JavaDoc**
+
+Javadocin generointi komennolla *mvn javadoc:javadoc* ja avautuu selaimeen tiedostosta target/site/apidocs/index.html
+
+
+
 
 
 
