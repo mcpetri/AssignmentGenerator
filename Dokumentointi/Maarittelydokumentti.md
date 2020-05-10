@@ -12,9 +12,9 @@ Sovellus on sinänsä naivii, että se vaatii vain käyttäjätunnuksen, jolle s
 
 Sovellukseen kirjaudutaan ensin Login -näkymästä, jonka jälkeen käyttäjä pääsee itse generaattorinäkymään, jossa käyttäjä voi valita vasemmalta olevasta menusta toimintoja
 
-[Imgur](https://i.imgur.com/RMu19C9.png)
+![Imgur](https://i.imgur.com/RMu19C9.png)
 
-[Imgur](https://i.imgur.com/OL5xtYL.png)
+![Imgur](https://i.imgur.com/OL5xtYL.png)
 
 
 
