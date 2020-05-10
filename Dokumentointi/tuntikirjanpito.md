@@ -18,6 +18,18 @@
 | 28.4  | 0.5  | UI:ta puhdistettu, napit yms samankokoisia ja samoissa paikoissa |
 | 28.4  | 1    | Vaikeusaste lisätty, Laskin -luokkaa muokattu sopeutumaan tähän |
 | 28.4  | 0.5  | Satunnaislasku lisätty |
+| 9.5   | 1.5  | Refaktorointi, JavaDoc ja kommentit ovat suomeksi, koodi englanniksi? |
+| 9.5   | 1    | Tiedostomuokkaukseen perehtyminen |
+| 9.5   | 4    | Statistics -luokan luominen ja sen lisääminen UI:hin |
+| 9.5   | 1    | Statistics -luokan testit, testikattavuuden lisääminen |
+| 9.5   | 1    | Login -näkymän lisääminen ja implementointi tilastoihin |
 |       |      |  |
 |       |      |  |
-| yht   | 19   |  | 
+|       |      |  |
+|       |      |  |
+|       |      |  |
+|       |      |  |
+|       |      |  |
+|       |      |  |
+|       |      |  |
+| yht   | 27.5   |  | 
