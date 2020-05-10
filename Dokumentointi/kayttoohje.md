@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa tiedosto [Generaattori.jar](https://github.com/mcpetri/ot-harjoitustyo/releases/tag/viikko5)
+Lataa tiedosto [AssignmentGenerator.jar](https://github.com/mcpetri/AssignmentGenerator/releases/tag/1.0)
 
 ## Ohjelman käynnistäminen
 
