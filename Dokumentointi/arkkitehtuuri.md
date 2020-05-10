@@ -43,7 +43,7 @@ Käydään läpi jokainen sovelluslogiikan toiminto sekvenssikaavioilla
 
 **Kirjautuminen**
 
-Sovellusta avatessa ensimmäisenä tulee automaattisesti login -näkymä johon käyttäjä syöttää halutun tunnuksen
+Sovellusta avatessa ensimmäisenä tulee automaattisesti login -näkymä johon käyttäjä syöttää halutun tunnuksen ja sovellus luo tunnukselle uudet tilastot jos tunnusta ei löydy.
 
 ![Imgur](https://i.imgur.com/j7BlK5D.png)
 
@@ -57,19 +57,19 @@ Vasemmalta olevasta menusta voidaan valita muutamasta laskutyypistä
 
 **Laskimen käyttö**
 
-Käyttäjä syöttää hyväksyttävän lausekkeen tekstikenttään ja painaa Laske. Tarvittaessa lausekkeen muodostamiseen saa apua Ohje -napista
+Käyttäjä syöttää hyväksyttävän lausekkeen tekstikenttään ja painaa Laske. Tarvittaessa lausekkeen muodostamiseen saa apua Ohje -napista.
 
 ![Imgur](https://i.imgur.com/Pp8PRxG.png)
 
 **Vaikeusasteen muutos**
 
-Käyttäjä voi asettaa parametrejä joilla tehtäviä luodaan
+Käyttäjä voi asettaa parametrejä joilla tehtäviä luodaan.
 
 ![Imgur](https://i.imgur.com/OTpsKs5.png)
 
 **Tilastojen päivitys ja näyttö**
 
-Kun käyttäjä valitsee Tilastot -näkymän, niin se automaattisesti hakee ja esittää nykyisen käyttäjätunnuksen tiedot
+Kun käyttäjä valitsee Tilastot -näkymän, niin se automaattisesti hakee ja esittää nykyisen käyttäjätunnuksen tiedot.
 
 ![Imgur](https://i.imgur.com/BQdKkLg.png)
 
