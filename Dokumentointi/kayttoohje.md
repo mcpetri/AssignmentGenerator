@@ -37,4 +37,4 @@ Vaikeusaste avaa valikon josta käyttäjä voi säätää tekijöiden vaihtelua 
 
 Tilastot avaa näkymän, josta käyttäjä voi tarkastella käyttäjätunnukseen liitettyjä tietoja
 
-![Imgur](https://imgur.com/Aj7dr7X)
+![Imgur](https://i.imgur.com/Aj7dr7X.png)
