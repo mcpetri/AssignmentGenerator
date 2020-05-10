@@ -43,14 +43,36 @@ Käydään läpi jokainen sovelluslogiikan toiminto sekvenssikaavioilla
 
 **Kirjautuminen**
 
+Sovellusta avatessa ensimmäisenä tulee automaattisesti login -näkymä johon käyttäjä syöttää halutun tunnuksen
+
+![Imgur](https://i.imgur.com/j7BlK5D.png)
+
 **Tehtävän tekeminen**
+
+Vasemmalta olevasta menusta voidaan valita muutamasta laskutyypistä
+
+![Imgur](https://i.imgur.com/A2Q4KRa.png)
+
+-lasku voi merkitä mitä tahansa menusta valittua laskua. Symbol vastaa valitun laskun symbolia (jakomerkki, kertomerkki yms). Jos käyttäjä tarkistaessaan vastasi oikein luo sovellus automaattisesti uuden tehtävän ja ilmoittaa että edelliseen tehtävään vastattiin oikein.
 
 **Laskimen käyttö**
 
+Käyttäjä syöttää hyväksyttävän lausekkeen tekstikenttään ja painaa Laske. Tarvittaessa lausekkeen muodostamiseen saa apua Ohje -napista
+
+![Imgur](https://i.imgur.com/Pp8PRxG.png)
+
 **Vaikeusasteen muutos**
+
+Käyttäjä voi asettaa parametrejä joilla tehtäviä luodaan
+
+![Imgur](https://i.imgur.com/OTpsKs5.png)
 
 **Tilastojen päivitys ja näyttö**
 
+Kun käyttäjä valitsee Tilastot -näkymän, niin se automaattisesti hakee ja esittää nykyisen käyttäjätunnuksen tiedot
+
+![Imgur](https://i.imgur.com/BQdKkLg.png)
 
 
-![Uuden tehtävän luonti](https://i.imgur.com/D3bZMdL.png)
+
+
