@@ -4,8 +4,9 @@ Lataa tiedosto [Generaattori.jar](https://github.com/mcpetri/ot-harjoitustyo/rel
 
 ## Ohjelman käynnistäminen
 
-Suoritettavan jarin generointi mvn package
-Ohjelma käynnistetään komennolla java -jar Generaattori.jar
+Suoritettavan jarin generointi *mvn package*
+
+Ohjelma käynnistetään komennolla java *-jar Generaattori.jar*
 
 ## Tehtävien tekemisen aloittaminen
 
