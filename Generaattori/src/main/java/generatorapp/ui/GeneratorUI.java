@@ -22,7 +22,7 @@ import javafx.stage.Stage;
 import javafx.stage.Popup;
 
 /**
- *
+ * Luo tehtävägeneraattorin UI:n
  * @author petri
  */
 public class GeneratorUI extends Application {
