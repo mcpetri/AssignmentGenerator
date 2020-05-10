@@ -1,14 +1,10 @@
-**OHJELMISTOTEKNIIKKA, harjoitustyö**
+ ## AssignmentGenerator
 
+Sovelluksen tarkoitus on luoda käyttäjälle matematiikan perustehtäviä merkeillä + , - , * , /. Sovellus myös pitää kirjaa kaikista toiminnoista, joita käyttäjä voi tehdä ja käyttäjä voi tarkkailla näitä tilastoja.
 
+Sovellus on Helsingin yliopiston kevään 2020 ohjelmistotekniikan kurssin harjoitustyö.
 
-**Tehtavageneraattori matematiikan tehtäville**
-
-Sovelluksen tekstikäyttöliittymä sallii neljän erimerkkisen laskun, yhteen-, vähennys-, kerto-, ja jakolaskujen tekemisen. Generaattori tuottaa tällä hetkellä alkeellisia "ratkaise x" kysymyksiä joihin käyttäjä voi vaikuttaa Vaikeusaste -valikossa sekä sisältää alkeellisen laskimen käyttäjälle.
-
-
-
-**Dokumentaatio**
+## Dokumentaatio
 
 [Käyttöohje](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/kayttoohje.md)
 
@@ -19,11 +15,13 @@ Sovelluksen tekstikäyttöliittymä sallii neljän erimerkkisen laskun, yhteen-,
 [Arkkitehtuuri](https://github.com/mcpetri/ot-harjoitustyo/blob/master/Dokumentointi/arkkitehtuuri.md)
 
 
-**Releaset**
+## Releaset
 
 [Viikko 5](https://github.com/mcpetri/ot-harjoitustyo/releases/tag/viikko5)
 
-**Komentorivitoiminnot**
+[Loppupalautus]()
+
+## Komentorivitoiminnot
 
 Suoritettavan jarin generointi *mvn package*
 
